@@ -122,7 +122,7 @@ function openLink(){
 
 console.log(bookTrust); 
     window.open(bookTrust);
-    window.open(link_review);
+   //window.open(link_review);
     document.getElementById("review_anchor").href=link_review;
     console.log(link_review);
 }
