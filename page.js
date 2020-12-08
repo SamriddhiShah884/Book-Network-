@@ -110,7 +110,7 @@ function openLink(){
     var bd= bl.replace(/ /g, '-');
     console.log("var bd= "+bd);
     var link_review="https://www.commonsensemedia.org/book-reviews/"+bd;
-    window.open(link_review);
+   
 
     var first= b.charAt(0);
     var pf=first.toLowerCase();
@@ -120,7 +120,8 @@ function openLink(){
     var bookTrust="https://www.booktrust.org.uk/book/"+pf+"/"+nd+"/";
     //https://www.booktrust.org.uk/book/t/the-bfg/
 
-console.log(bookTrust);
-    document.getElementById("review_anchor").href=bookTrust;
+console.log(bookTrust); 
+    window.open(bookTrust);
+    document.getElementById("review_anchor").href=link_review;
     console.log(link_review);
 }
